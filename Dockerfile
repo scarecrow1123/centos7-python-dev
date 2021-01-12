@@ -8,4 +8,4 @@ RUN yum install -y which tmux htop vim man && \
     echo "alias tmux='tmux -u'" >> ~/.bashrc && \
     echo 'set -g default-terminal "screen-256color"' >> ~/.tmux.conf
 
-CMD ["/bin/bash"]
+CMD ["/bin/bash", "-l"]
